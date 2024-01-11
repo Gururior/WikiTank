@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="icon" href="Imagenes/icontank.png">
+    
+    <title>Wiki de Tanques</title>
+
+</head>
+<body>
+
+    <section id="principal">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand active" href="#" type="button"  onclick="cambiarPagina('Inicio')"><h2>Inicio</h2></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="opciones" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+               <div class="collapse navbar-collapse" id="opciones">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <p>  <a type="button" onclick="cambiarPagina('InicioNosotros')" class="nav-link active" href="#"><legend>Nosotros</legend></a>
+                                <span class="visually-hidden">(current)</span>
+                            </a></p>
+                           
+                        </li>
+                        <li class="nav-item">
+                            <a type="button" onclick="cambiarPagina('InicioContacto')" class="nav-link" href="#"><legend>Contactos</legend></a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search" id="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="Abriropciones(this, 'opcion')">Search</button>
+                    </form>
+
+               </div> 
+
+            </div>
+
+        </nav>
+
+
+    </section>
+
+
+    <div class="breadcrumbs" id="breadcrumbs"></div>
+        
+    <section class="pagina visible" id="Inicio">
+
+        <h1>Modelo de Tanques</h1>
+        
+        <div class="rectangular-clip">
+            
+                <img src="Imagenes/Optank.png" alt=""  class="tabimg" id="Inicio">
+
+            </div>
+                <br>
+                <h2>Información</h2>
+        
+                <div class="container">
+                    <!-- Esta parte es para poder  declarar los items los cuales formaran parte de la misma pagina-->   
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" class="tabimg">
+                <h2>Tiger I</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" class="tabimg">
+                <H2>King Tiger II</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" >
+                <H2>Panther</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>
+
+
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" class="tabimg">
+                <h2>KV-2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" class="tabimg">
+                <H2>T-34</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>
+            <div class="container-item">
+                <img src="./Imagenes/" alt="" class="tabimg">
+                <H2>KV-1S</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestias soluta, laboriosam animi, veritatis iusto numquam maxime incidunt labore itaque cumque ea facere esse consequuntur laborum earum atque doloremque sequi!</p>
+                <button type="button" class="btn btn-dark"><a href="">Info</a></button>
+            </div>   
+        </div>
+
+        <div class="Carousel" id="inicio">
+
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            
+            <main id="carusel">
+                <div class="cosas">
+                     <img src="Imagenes/f6a86253a40b1409af9406605875f673.jpg" alt="" class="tabimg">
+                        
+                </div>
+                <div class="cosas">
+                    <img src="Imagenes/world-of-tanks-legendarnyy.jpg" alt="" class="tabimg">
+                        
+                </div>
+                <div class="cosas">
+                    <img src="Imagenes/wp1822542.jpg" alt="" class="tabimg" >
+                        
+                </div>
+                <div class="cosas">
+                    <img src="Imagenes/3423f2013025f827e2bb89c3f5babe24.png" alt="" class="tabimg">
+                        
+                </div>
+                <div class="cosas">
+                    <img src="Imagenes/946845.png" alt="" class="tabimg">
+                        
+                </div>
+                <div class="cosas">
+                    <img src="Imagenes/Tiger02.jpg.gallery.jpg" alt="" class="tabimg">
+                        
+                </div>
+                <div class="cosas"></div>
+            </main>
+        </div>
+
+        <div>
+            <audio controls>
+                <source src="./multimedia/y2mate.com - Stranger Things Theme Song C418 REMIX.mp3" type="audio/ogg">
+                <source src="./multimedia/y2mate.com - Stranger Things Theme Song C418 REMIX.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+                
+        
+    </section>      
+
+    <section id="InicioNosotros" class="pagina">
+        <form id="formOpcion">
+
+            <h1>¿De que se trata?</h1>
+
+             <div>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas quasi quos magnam reprehenderit obcaecati aliquam ut beatae cupiditate rem consectetur praesentium, non in at ipsa maiores expedita perferendis corrupti?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nesciunt exercitationem itaque earum fugiat ipsum, laboriosam nisi atque, magnam ipsam sint minima repudiandae dignissimos laborum in? Tempore commodi explicabo facilis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo deserunt unde. Accusamus perferendis aspernatur repudiandae illo expedita unde autem, hic officiis ipsum maxime, totam ullam harum! Obcaecati, praesentium maiores.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ipsam molestiae incidunt dolore quod nesciunt et aliquam fuga repellendus provident commodi dignissimos ratione iusto, nihil, deserunt natus doloribus, labore ab.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, atque blanditiis earum iste quia at nostrum dolores aliquid? Ullam sint corporis ipsum perferendis? Blanditiis, quibusdam hic. Quam nulla tempore nostrum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quae quidem unde incidunt asperiores vel iure! Aspernatur doloribus ratione molestiae nihil. Tempora tenetur similique laborum id dolorum. Vel, beatae saepe.
+                </h3>
+             </div>
+        </form>
+
+    </section>
+
+
+    <section id="InicioContacto" class="pagina"> 
+
+     
+        <div class="container">
+                    
+           <form class="forum">
+
+                <label for="nombre" class="lble3">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="put">
+                
+                <label for="email" class="lble3">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="put">
+                
+                <label for="telefono" class="lble3">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required class="put">
+                
+                <label for="mensaje" class="lble3">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required class="texta"></textarea>
+                
+                <div>
+                    <button type="button" class="btn4">Enviar</button>
+                </div>
+                
+            </form>
+        </div>
+        
+        <div class="contactoIn">
+            <h4>Contactanos:</h4>
+            <h4>Correo electronico: jesmanuel9991@gmail.com</h4>
+            <h4>No. telofono: 243 1261009</h4>
+            <h4>Dirreción: Izucar de Matamoros</h4>
+        </div>
+        
+    </section>
+
+    <div class="pie">
+                        
+        <legend>Copyright © 2024 - All right reserved by </legend>
+        <br>
+
+    </div>
+        
+</body>
+
+
+</html>

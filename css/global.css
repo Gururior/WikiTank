@@ -1,0 +1,47 @@
+body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+.alignCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.pagina {
+    display: none;
+  }
+
+.visible {
+    display: block;
+}
+
+.contactoIn{
+    font-size: 1rem;
+    text-align: left;
+    color: rgb(3, 243, 123);
+    text-decoration: none;
+}
+
+.pie{
+    box-shadow: 0 0 10px #0e0e0e;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(107, 31, 206);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#legend{
+    font-size: 1rem;
+}
+
+.breadcrumbs {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+}
